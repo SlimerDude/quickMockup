@@ -665,6 +665,25 @@
 		.newMockElement.note .editableArea, .mockElement.note .editableArea{
 			padding:0.5em;
 		}
+
+		.newMockElement.boxarrow {
+			display: inline-block;
+		}
+		.newMockElement.boxarrow, .mockElement.boxarrow {
+			width:	50px;
+			height:	50px;
+			background-color: transparent;
+		}
+		.newMockElement.boxarrow > svg, .mockElement.boxarrow > svg {
+			width: 100%;
+			height: 100%;
+		}
+		.newMockElement.boxarrow > .editableArea, .mockElement.boxarrow > .editableArea {
+			display: none;
+		}
+		svg.hideme {
+			height: 0;
+		}
 	</style>
 </head>
 
@@ -918,6 +937,37 @@ Paragraph
 						</div>
 					</div>
 				</li>
+
+				<li title="arrow">
+					<div class="newMockElement boxarrow">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M0,0 Q25,75 100 100" marker-start="url(#arrowstart)" stroke="black" fill="none" stroke-width="2"/>
+						</svg>
+					</div>
+					<div class="newMockElement boxarrow">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M0,0 Q75,25 100 100" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
+						</svg>
+					</div>
+				</li>
+				<li title="arrow">
+					<div class="newMockElement boxarrow">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M100,0 Q25,25 0 100" marker-start="url(#arrowstart)" stroke="black" fill="none" stroke-width="2"/>
+						</svg>
+					</div>
+					<div class="newMockElement boxarrow">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M100,0 Q75,75 0 100" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
+						</svg>
+					</div>
+				</li>
+				<svg class="hideme" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<marker id="arrowstart" viewBox="0 -5 10 10" refX="0" refY="0" markerWidth="8" markerHeight="8" orient="auto"><path d="M10,-5L0,0L10,5"/></marker>
+						<marker id="arrowend"   viewBox="0 -5 10 10" refX="10" refY="0" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,-5L10,0L0,5"/></marker>
+					</defs>
+				</svg>
 		</ul>
 	</div>
 
