@@ -16,7 +16,7 @@
 			var editableContent = this.element.attr("data-editable-content");
 
 
-			this.$editableElement.html(this.toHTML(editableContent));
+			this.$editableElement.html(this.toHTML(editableContent, this.$editableElement));
 
 		},
 		_create:function(){//create is only fired on creation. Use it to create markup and bind events
@@ -28,8 +28,9 @@
 			this.editType = this.element.attr("data-editable-mode");
 
 			if(this.editType==="plain"){
-				this.toHTML = function(string){
-					return string;}; //does nothing
+				this.toHTML = function(string){ return string;}; //does nothing
+			} else if (this.editType==="arrow"){
+				this.toHTML = arrowConverter;
 			} else if (this.editType==="uielements"){
 				this.toHTML = uiElementsConverter;
 			} else {
@@ -64,7 +65,7 @@
 			var editablePosition = this.$editableElement.position();
 
 			/*if(this.element.find(".editableArea").first().hasClass("editableContent-plaintext")){*/
-			if(this.editType === 'plain'){
+			if(this.editType === 'plain' || this.editType === 'arrow'){
 				this.inputElement = $('<input>',{
 				type:"text",
 				class:"plaintextinput",
@@ -113,7 +114,7 @@
 			var editableContent = this.inputElement.val(); //reads what the user wrote
 			/*if(this.element.find(".editableArea").first().hasClass("editableContent-plaintext")){*/
 
-			var html = this.toHTML(editableContent);
+			var html = this.toHTML(editableContent, this.$editableElement);
 
 			 //convert to html
 
@@ -164,6 +165,21 @@
 		});
 
 		return "<ul>"+newString+"</ul>";
+	}
+
+	function arrowConverter(string, elem) {
+		var html = elem.html();
+		if (string.indexOf("<") !== -1)
+			html = html.replace("marker-start=\"none\"", "marker-start=\"url(#arrowstart)\"");
+		else
+			html = html.replace("marker-start=\"url(#arrowstart)\"", "marker-start=\"none\"");
+
+		if (string.indexOf(">") !== -1)
+			html = html.replace("marker-end=\"none\"", "marker-end=\"url(#arrowend)\"");
+		else
+			html = html.replace("marker-end=\"url(#arrowend)\"", "marker-end=\"none\"");
+
+		return html;
 	}
 
 })(jQuery);
