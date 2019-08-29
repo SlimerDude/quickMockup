@@ -1,4 +1,4 @@
-#QuickMockup
+# QuickMockup
 
 QuickMockup is a simple tool for creating simple mockups of interfaces and websites. It is HTML based and javascript-enhanced.
 
