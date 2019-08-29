@@ -2,7 +2,7 @@
 
 QuickMockup is a simple tool for creating simple mockups of interfaces and websites. It is HTML based and javascript-enhanced.
 
-*This fork improves upon the original by added some much needed arrows and an invisible grouping container.*
+*This fork improves upon the original by adding some much needed arrows and an invisible grouping container.*
 
 **[Try the demo](https://slimerdude.github.io/quickMockup/)**
 
