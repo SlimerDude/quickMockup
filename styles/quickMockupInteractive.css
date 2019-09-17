@@ -42,7 +42,7 @@
 
 			#widgetCollectionWrap{
 				display	: block;	/*not displayed in the html-files style*/
-				width	: 300px;
+				width	: 320px;
 				height	: 100%;
 			}
 			#widgetCollection{

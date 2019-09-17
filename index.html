@@ -732,12 +732,90 @@
 
 				-->
 
-				<li title="button">
-					<div class="newMockElement button" data-editable-content="OK" data-editable-mode="plain">
-						<span class="editableArea">OK</span>
+				<li>
+					<div class="newMockElement headline" data-editable-content="headline1" data-editable-mode="plain">
+						<h1 class="editableArea">Headline1</h1>
 					</div>
 				</li>
-				<li title="tabs"><!-- Tabs -->
+
+				<li title="Markdown-editable paragraph">
+					<div class="newMockElement paragraph" data-editable-content="Markdown text">
+						<div class="editableArea">Multiline Markdown text</div>
+					</div>
+				</li>
+
+				<li title="Markdown-editable sticky note">
+					<div class="newMockElement meta-element note" data-editable-content="Notes here!" data-editable-mode="markdown">
+						<div class="editableArea" >
+						</div>
+					</div>
+				</li>
+
+				<li title="Editable sticky arrow-note">
+					<div class="newMockElement meta-element arrownote" data-editable-content="Notes here!" data-editable-mode="plain">
+						<div class="editableArea" >
+						note!
+						</div>
+					</div>
+				</li>
+
+				<li title="Arrows">
+					<div class="newMockElement boxarrow" data-editable-content="&lt;--" data-editable-mode="arrow">
+						<div class="editableArea">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="M0,100 Q25,25 100 0" marker-start="url(#arrowstart)" marker-end="none" stroke="black" fill="none" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="newMockElement boxarrow" data-editable-content="--&gt;" data-editable-mode="arrow">
+						<div class="editableArea">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="M0,0 Q75,25 100 100" marker-start="none" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="newMockElement boxarrow" data-editable-content="--&gt;" data-editable-mode="arrow">
+						<div class="editableArea">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="M0,100 Q75,75 100 0" marker-start="none" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="newMockElement boxarrow" data-editable-content="&lt;--" data-editable-mode="arrow">
+						<div class="editableArea">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="M0,0 Q25,75 100 100" marker-start="url(#arrowstart)" marker-end="none" stroke="black" fill="none" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</li>
+
+				<li title="Simple OS window"><!-- Dialog Window -->
+					<div class="newMockElement dialogWindow" data-editable-content="myWindow" data-editable-mode="plain">
+						<div class="dialogWindow-bar" >
+							<span class="editableArea">Title</span>
+							<span class="dialogWindow-closeButton">×</span>
+						</div>
+					</div>
+				</li>
+
+				<li title="Rectangle container">
+					<div class="newMockElement rect">
+					</div>
+				</li>
+
+				<li title="Grey rectangle container">
+					<div class="newMockElement grayrect">
+					</div>
+				</li>
+
+				<li title="Invisible rectangle container">
+					<div class="newMockElement invisiblerect">
+						<div class="desc">Invisible Rect<br>Use for grouping</div>
+					</div>
+				</li>
+
+				<li title="Tabs"><!-- Tabs -->
 					<div class="newMockElement tabs" data-editable-content="Tab1;*Tab2; Tab3" data-editable-mode="uielements">
 						<div class="editableArea" >
 							<ul>
@@ -749,17 +827,26 @@
 						</div>
 					</div>
 				</li>
+
+				<li title="Button">
+					<div class="newMockElement button" data-editable-content="OK" data-editable-mode="plain">
+						<span class="editableArea">OK</span>
+					</div>
+				</li>
+
 				<li title="Short text label">
 					<div class="newMockElement label" data-editable-content="label" data-editable-mode="plain">
 						<div class="editableArea">Label</div>
 					</div>
 				</li>
-				<li title="a link">
+
+				<li title="A link">
 					<div class="newMockElement link" data-editable-content="link" data-editable-mode="plain">
 						<div class="editableArea">Link</div>
 					</div>
 				</li>
-				<li title="checkbox list">
+
+				<li title="Checkboxs">
 					<div class="newMockElement optionCheckbox" data-editable-content="option; *other option"  data-editable-mode="uielements">
 						<div class="editableArea">
 							<ul>
@@ -770,7 +857,8 @@
 						</div>
 					</div>
 				</li>
-				<li title="radio-button list">
+
+				<li title="Radio-buttons">
 					<div class="newMockElement optionRadiobutton" data-editable-content="option; *other option"  data-editable-mode="uielements">
 						<div class="editableArea">
 							<ul>
@@ -780,43 +868,14 @@
 						</div>
 					</div>
 				</li>
-				<li title="dropdown element">
+
+				<li title="Dropdown">
 					<div class="newMockElement dropdownList" data-editable-content="DropdownTitle"  data-editable-mode="plain">
 						<span class="editableArea">Dropdown Title</span><span class="mockelement-dropdown-arrow">▾</span>
 					</div>
 				</li>
-				<li title="spinner element">
-					<div class="newMockElement spinner" data-editable-content="10"  data-editable-mode="plain">
-						<span class="editableArea">10</span>
-					</div>
-				</li>
-				<li title="slider element">
-					<div class="newMockElement slider" >
-						<span> </span>
-					</div>
-				</li>
-				<li>
-					<div class="newMockElement loadingIndicator" >
-						<div class="bar"></div>
-						70%
-					</div>
-				</li>
-				<li>
-					<div class="newMockElement headline" data-editable-content="headline1" data-editable-mode="plain">
-						<h1 class="editableArea">Headline1</h1>
-					</div>
-				</li>
-				<li title="Markdown-editable paragraph">
-					<div class="newMockElement paragraph" data-editable-content="
-Paragraph
-(Markdown **Supported** !)">
-						<div class="editableArea">
-							Paragraph
-							(Markdown<strong> Supported</strong>!)
-						</div>
-					</div>
-				</li>
-				<li title="markdown table">
+
+				<li title="Markdown table">
 					<div class="newMockElement table" data-editable-content="
 | h1    | h2      |      h3 |
 |:------|:-------:|--------:|
@@ -851,27 +910,56 @@ Paragraph
 						</div>
 					</div>
 				</li>
-				<li title="simple OS window"><!-- Dialog Window -->
-					<div class="newMockElement dialogWindow" data-editable-content="myWindow" data-editable-mode="plain">
-						<div class="dialogWindow-bar" >
-							<span class="editableArea">Title</span>
-							<span class="dialogWindow-closeButton">×</span>
+
+				<li title="Image placeholder">
+					<div class="newMockElement imageplaceholder" data-editable-content="Image" data-editable-mode="plain">
+						<div class="editableArea">Image</div>
+					</div>
+				</li>
+
+				<li title="Horizontal boxes list (e.g. for toolbars)">
+					<div class="newMockElement boxes-horizontal" data-editable-content="Entry1;Entry2;*Entry3" data-editable-mode="uielements">
+						<div class="editableArea" >
+							<ul>
+								<li>Entry1</li>
+								<li>Entry2</li>
+								<li class="item-highlighted">Entry3</li>
+							</ul>
 						</div>
 					</div>
 				</li>
-				<li title="a rectangle">
-					<div class="newMockElement rect">
+
+				<li title="Vertical boxes list (e.g. for toolbars)">
+					<div class="newMockElement boxes-vertical" data-editable-content="Entry1;Entry2;*Entry3" data-editable-mode="uielements">
+						<div class="editableArea" >
+							<ul>
+								<li>Entry1</li>
+								<li>Entry2</li>
+								<li class="item-highlighted">Entry3</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li title="a gray rectangle">
-					<div class="newMockElement grayrect">
+
+				<li title="Horizontal boxes for toolbars">
+					<div class="newMockElement boxes-horizontal boxes-iconbar-horizontal" data-editable-content="☰;⌂;⚑; ⚙; ✂;✐;✔;✘;↶;↷;◂;▸; ▴;▾" data-editable-mode="uielements">
+						<div class="editableArea" >
+							<ul>
+								<li>☰</li><li>⌂</li><li>⚑</li><li> ⚙</li><li> ✂</li><li>✐</li><li>✔</li><li>✘</li><li>↶</li><li>↷</li><li>◂</li><li>▸</li><li> ▴</li><li>▾</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li title="an invisible rectangle">
-					<div class="newMockElement invisiblerect">
-						<div class="desc">Invisible Rect<br>Use for grouping</div>
+
+				<!-- SlimerDude - this is pretty pointless
+				<li title="add markdown link to image">
+					<div class="newMockElement actualimage" data-editable-content="![]()<!- - add URL to image in the round brackets - ->" data-editable-mode="markdown">
+						<div class="editableArea">
+						Image (double click to add markdown link to image)
+						</div>
 					</div>
 				</li>
+				-->
 
 				<!-- SlimerDude - these don't add anything
 				<li title="horizontal list">
@@ -898,103 +986,27 @@ Paragraph
 				</li>
 				-->
 
-				<li title="horizontal boxes list (e.g. for toolbars)">
-					<div class="newMockElement boxes-horizontal" data-editable-content="Entry1;Entry2;*Entry3" data-editable-mode="uielements">
-						<div class="editableArea" >
-							<ul>
-								<li>Entry1</li>
-								<li>Entry2</li>
-								<li class="item-highlighted">Entry3</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li title="vertical boxes list (e.g. for toolbars)">
-					<div class="newMockElement boxes-vertical" data-editable-content="Entry1;Entry2;*Entry3" data-editable-mode="uielements">
-						<div class="editableArea" >
-							<ul>
-								<li>Entry1</li>
-								<li>Entry2</li>
-								<li class="item-highlighted">Entry3</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li title="horizontal boxes for toolbars">
-					<div class="newMockElement boxes-horizontal boxes-iconbar-horizontal" data-editable-content="☰;⌂;⚑; ⚙; ✂;✐;✔;✘;↶;↷;◂;▸; ▴;▾" data-editable-mode="uielements">
-						<div class="editableArea" >
-							<ul>
-								<li>☰</li><li>⌂</li><li>⚑</li><li> ⚙</li><li> ✂</li><li>✐</li><li>✔</li><li>✘</li><li>↶</li><li>↷</li><li>◂</li><li>▸</li><li> ▴</li><li>▾</li>
-							</ul>
-						</div>
+				<!-- SlimerDude - I never use these
+				<li title="spinner element">
+					<div class="newMockElement spinner" data-editable-content="10"  data-editable-mode="plain">
+						<span class="editableArea">10</span>
 					</div>
 				</li>
 
-				<li title="image placeholder">
-					<div class="newMockElement imageplaceholder" data-editable-content="Image" data-editable-mode="plain">
-						<div class="editableArea" >
-						Image
-						</div>
+				<li title="slider element">
+					<div class="newMockElement slider" >
+						<span> </span>
 					</div>
 				</li>
 
-				<!-- SlimerDude - this is pretty pointless
-				<li title="add markdown link to image">
-					<div class="newMockElement actualimage" data-editable-content="![]()<!- - add URL to image in the round brackets - ->" data-editable-mode="markdown">
-						<div class="editableArea">
-						Image (double click to add markdown link to image)
-						</div>
+				<li>
+					<div class="newMockElement loadingIndicator" >
+						<div class="bar"></div>
+						70%
 					</div>
 				</li>
 				-->
 
-				<li title="Markdown-editable sticky note">
-					<div class="newMockElement meta-element note" data-editable-content="Notes here!" data-editable-mode="markdown">
-						<div class="editableArea" >
-						</div>
-					</div>
-				</li>
-
-				<li title="editable sticky arrow-note">
-					<div class="newMockElement meta-element arrownote" data-editable-content="Notes here!" data-editable-mode="plain">
-						<div class="editableArea" >
-						note!
-						</div>
-					</div>
-				</li>
-
-				<li title="arrow">
-					<div class="newMockElement boxarrow" data-editable-content="&lt;--" data-editable-mode="arrow">
-						<div class="editableArea">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-								<path d="M0,0 Q25,75 100 100" marker-start="url(#arrowstart)" marker-end="none" stroke="black" fill="none" stroke-width="2"/>
-							</svg>
-						</div>
-					</div>
-					<div class="newMockElement boxarrow" data-editable-content="--&gt;" data-editable-mode="arrow">
-						<div class="editableArea">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-								<path d="M0,0 Q75,25 100 100" marker-start="none" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
-							</svg>
-						</div>
-					</div>
-				</li>
-				<li title="arrow">
-					<div class="newMockElement boxarrow" data-editable-content="&lt;--" data-editable-mode="arrow">
-						<div class="editableArea">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-								<path d="M0,100 Q25,25 100 0" marker-start="url(#arrowstart)" marker-end="none" stroke="black" fill="none" stroke-width="2"/>
-							</svg>
-						</div>
-					</div>
-					<div class="newMockElement boxarrow" data-editable-content="--&gt;" data-editable-mode="arrow">
-						<div class="editableArea">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-								<path d="M0,100 Q75,75 100 0" marker-start="none" marker-end="url(#arrowend)" stroke="black" fill="none" stroke-width="2"/>
-							</svg>
-						</div>
-					</div>
-				</li>
 		</ul>
 	</div>
 
