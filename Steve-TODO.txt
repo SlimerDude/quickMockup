@@ -1,0 +1,11 @@
+
+Add straight arrows
+
+Allow blank lines in Markdown
+
+Fix CSS for extra wide dropdown
+
+Delete (comment out / or move to bottom) spinner, slider, and progress bar
+Delete (comment out / or move to bottom) single line sticky.
+
+Re-order components
