@@ -41,9 +41,9 @@
 			}
 
 			#widgetCollectionWrap{
-				display: block;/*not displayed in the html-files style*/
-				width:200px;
-				height: 100%;
+				display	: block;	/*not displayed in the html-files style*/
+				width	: 300px;
+				height	: 100%;
 			}
 			#widgetCollection{
 				position:relative;
